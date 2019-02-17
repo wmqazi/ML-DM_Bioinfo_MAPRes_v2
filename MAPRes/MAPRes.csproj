@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B858184-11DF-4AD5-B3E4-E8190221066A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>CASIG-MAPRes version 2.0.0.0 %28Advance Edition%29</AssemblyName>
+    <RootNamespace>MAPRes</RootNamespace>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssociationRulesMining.cs" />
+    <Compile Include="AssociationRulesMiningWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssociationRulesMiningWnd.designer.cs">
+      <DependentUpon>AssociationRulesMiningWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssociationRulesResult.cs" />
+    <Compile Include="DataTableSelectorWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTableSelectorWnd.Designer.cs">
+      <DependentUpon>DataTableSelectorWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTableWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTableWnd.Designer.cs">
+      <DependentUpon>DataTableWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalizeProjectWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalizeProjectWnd.Designer.cs">
+      <DependentUpon>FinalizeProjectWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAPResDatasetViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAPResDatasetViewer.Designer.cs">
+      <DependentUpon>MAPResDatasetViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAPResDelegates.cs" />
+    <Compile Include="MAPResWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAPResWnd.Designer.cs">
+      <DependentUpon>MAPResWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProjectWizard.cs" />
+    <Compile Include="NewProjectWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProjectWnd.Designer.cs">
+      <DependentUpon>NewProjectWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeptideGenerator.cs" />
+    <Compile Include="PreferrenceAnalysisResultSet.cs" />
+    <Compile Include="PreferrenceEstimation.cs" />
+    <Compile Include="PreferrenceEstimationSummaryManagerWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreferrenceEstimationSummaryManagerWnd.Designer.cs">
+      <DependentUpon>PreferrenceEstimationSummaryManagerWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreferrenceEstimationWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreferrenceEstimationWnd.Designer.cs">
+      <DependentUpon>PreferrenceEstimationWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="PropertiesWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertiesWnd.Designer.cs">
+      <DependentUpon>PropertiesWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Rule.cs" />
+    <Compile Include="SequenceTransformation.cs" />
+    <Compile Include="Site.cs" />
+    <Compile Include="Subject.cs" />
+    <Compile Include="TypeOfPreferrence.cs" />
+    <Compile Include="ViewPreferredSitesWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPreferredSitesWnd.Designer.cs">
+      <DependentUpon>ViewPreferredSitesWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkSpace.cs" />
+    <Compile Include="WorkSpace.MAPResCoreMethods.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssociationRulesMiningWnd.resx">
+      <DependentUpon>AssociationRulesMiningWnd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTableSelectorWnd.resx">
+      <DependentUpon>DataTableSelectorWnd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTableWnd.resx">
+      <DependentUpon>DataTableWnd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalizeProjectWnd.resx">
+      <DependentUpon>FinalizeProjectWnd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAPResDatasetViewer.resx">
+      <DependentUpon>MAPResDatasetViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAPResWnd.resx">
+      <DependentUpon>MAPResWnd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProjectWnd.resx">
+      <DependentUpon>NewProjectWnd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreferrenceEstimationSummaryManagerWnd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PreferrenceEstimationSummaryManagerWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreferrenceEstimationWnd.resx">
+      <DependentUpon>PreferrenceEstimationWnd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesWnd.resx">
+      <DependentUpon>PropertiesWnd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPreferredSitesWnd.resx">
+      <DependentUpon>ViewPreferredSitesWnd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\ALPHTRPN.WMF" />
+    <None Include="Resources\CALCULTR.WMF" />
+    <None Include="Resources\MULTARW2.WMF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GRAPH14.ICO" />
+    <Content Include="Resources\BD14565_.GIF" />
+    <Content Include="Resources\Close.png" />
+    <Content Include="Resources\Cut.png" />
+    <Content Include="Resources\Grid-Footers.png" />
+    <Content Include="Resources\Grid-Footers1.png" />
+    <Content Include="Resources\Grid-Footers2.png" />
+    <Content Include="Resources\J0240695.bmp" />
+    <Content Include="Resources\JST.BMP" />
+    <Content Include="Resources\kaka.PNG" />
+    <Content Include="Resources\LFT.BMP" />
+    <Content Include="Resources\MCR.BMP" />
+    <Content Include="Resources\New.bmp" />
+    <Content Include="Resources\New.png" />
+    <Content Include="Resources\Open.png" />
+    <Content Include="Resources\Pen.png" />
+    <Content Include="Resources\PROP.BMP" />
+    <None Include="Resources\Report-Bound.png" />
+    <Content Include="Resources\Save.png" />
+    <Content Include="YellowDirOpen.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
